@@ -33,6 +33,11 @@ public class DateAndTime
             System.out.println("Happy Birthday, Kristian! Today is " + dayOfWeek + ", " + month + " " + dayOfMonth + ", " + year);
         }
 
+        else if (!MonthDay.from(today).isAfter(MonthDay.of(6, 16)) || !MonthDay.from(today).isBefore(MonthDay.of(8, 1)))
+        {
+            System.out.println("Hello, Kristian! Time to hit the books and study hard for school! \nToday is " + dayOfWeek + ", " + month + " " + dayOfMonth + ", " + year);
+        }
+
         else
         {
             System.out.println("Hello, Kristian! Today is"  + dayOfWeek + ", " + month + " " + dayOfMonth + ", " + year);
